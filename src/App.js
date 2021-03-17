@@ -6,6 +6,7 @@ import {
   View,
   TextInput,
   TouchableOpacity,
+  Image
 } from "react-native";
  import Container from './Container'
 export default function App() {
@@ -15,7 +16,8 @@ export default function App() {
   return (
     <Container title={'Login'}>
     <View style={styles.container}>
- 
+    <Image style={styles.image} source={{uri:'https://firebasestorage.googleapis.com/v0/b/reactnativewebdemo-9a0a9.appspot.com/o/logo.png?alt=media&token=56619bd5-6365-46da-a45c-30d963970a2b'}} />
+
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
@@ -58,6 +60,7 @@ const styles = StyleSheet.create({
  
   image: {
     marginBottom: 40,
+    height:100,width:100,
   },
  
   inputView: {
@@ -66,6 +69,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 45,
     marginBottom: 20,
+
  
     alignItems: "center",
   },
