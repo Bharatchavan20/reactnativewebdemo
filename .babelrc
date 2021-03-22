@@ -1,12 +1,13 @@
 {
-    "plugins": [
-		[
-			"module-resolver",
-			{
-				"alias": {
-					"^react-native$": "react-native-web"
-				}
-			}
-		]
-	]
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "^react-native$": "react-native-web"
+        }
+      }
+    ],
+    ["react-native-web", { "commonjs": true }]
+  ]
 }
